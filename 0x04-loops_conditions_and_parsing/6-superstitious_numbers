@@ -6,14 +6,14 @@ cases()
 local i="$i"
 	case $i in
 	4)
-		echo "bad luck from China"
-		;;
+	echo "bad luck from China"
+	;;
 	9)
-		echo "back luck from Japan"
-		;;
+	echo "back luck from Japan"
+	;;
 	17)
-		echo "bad luck from Italy"
-		;;
+	echo "bad luck from Italy"
+	;;
 	esac
 }
 i=1
