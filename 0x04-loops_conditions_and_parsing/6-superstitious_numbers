@@ -9,7 +9,7 @@ local i="$i"
 		echo "bad luck from China"
 		;;
 	9)
-		echo "back luck japan"
+		echo "back luck from japan"
 		;;
 	17)
 		echo "bad luck from Italy"
