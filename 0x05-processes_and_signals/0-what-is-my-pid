@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Print the pid of the bash
+pidof bash
