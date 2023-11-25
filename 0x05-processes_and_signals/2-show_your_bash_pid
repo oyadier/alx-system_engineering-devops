@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Filter pids
+ps auxf | grep "bash"
