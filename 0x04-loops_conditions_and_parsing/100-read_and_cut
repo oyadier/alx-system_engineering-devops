@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Reading the content of a file
+
+file="'text'"
+while read -r file
+do
+	echo "$file"
+done
