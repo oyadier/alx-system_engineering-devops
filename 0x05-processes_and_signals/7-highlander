@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# A script that kill another process
+
+while((1))
+do
+	echo "To infinity and beyound"
+	sleep 2
+	trap 'echo "I am invincible!!!"' SIGTERM
+done
