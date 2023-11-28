@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-" Procss and PID file
+# Procss and PID file
 terminator()
 {
 	rm /var/run/myscript.pid
