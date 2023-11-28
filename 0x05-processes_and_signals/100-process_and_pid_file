@@ -3,7 +3,6 @@
 terminator()
 {
 	rm /var/run/myscript.pid
-	exit
 }
 echo "&&" > /var/run/myscript.pid
 while((1))
