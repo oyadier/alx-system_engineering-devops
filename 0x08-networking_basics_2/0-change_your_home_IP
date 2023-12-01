@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Write a Bash script that configures an Ubuntu server with the below requirements.
+
+# Requirements:
+
+# 1. localhost resolves to 127.0.0.2
+# 2. facebook.com resolves to 8.8.8.8
+
+cp  /etc/hosts ./robehost
+sed -i 's/127.0.0.1/127.0.0.2/' robehost
+sed -i 's/102.132.101.35/8.8.8.8/' robehost
+cp -f ./robehost /etc/hosts
