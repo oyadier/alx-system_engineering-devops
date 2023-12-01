@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Connect to the local host
+
+nc -l 98
