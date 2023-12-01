@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Show only the ip address
+
+ip address show | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
+
