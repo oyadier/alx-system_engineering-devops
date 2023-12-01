@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Show only the ip address
-
-ifconfig | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
+# The ip tool is more reliable than the ifconfig even though all can.
+ip -4 address show | awk '/inet / {print $2}' | cut -d '/' -f1
