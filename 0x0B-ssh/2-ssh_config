@@ -4,3 +4,5 @@ Hostname oyadier
 	Hostname 54.146.90.237
 	Port 4444
 	User ubuntu
+	PasswordAuthentication no
+	IdentityFile ~/.ssh/school
