@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # script to install and configure Nginx
-sudo su apt-get update -y
-sudo su apt-get install - y nginx
+sudo apt-get update -y
+sudo apt-get install nginx -y
 echo "Hello World!" > /var/www/html/index.html
-sudo su service nginx start
+sudo service nginx start
