@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Install HAProxy on Load balancers
+
+sudo apt-get install --no-install-recommends software-properties-common
+sudo add-apt-repository ppa:vbernat/haproxy-2.8
+sudo apt-get install haproxy=2.8.\*
+sudo echo  "ENABLE=1" >> /etc/default/haproxy
+
+# Configure haproxy config file
+
+echo "
+frontend http
+	bind *:80
+	default_backend myservers
+
+backend myservers
+	balance roundrobin
+	server 317203-web-01 54.210.53.70:80
+	server 317203-web-02 34.224.17.191:80" >> /etc/haproxy/haproxy.cfg
+
+
+
+
