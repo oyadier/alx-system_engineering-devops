@@ -25,10 +25,10 @@ if __name__ == '__main__':
     dones = []
     for todo in user_todo:
         if todo.get('completed'):
-            dones.append(todo)
             task_done += 1
+            dones.append(todo)
 
     print("Employee {} is done with task({}/{}):"
-          .format(name, task_done, len(dones)))
+          .format(name, task_done, len(user_todo)))
     for task in dones:
         print("\t {}".format(task.get('title')))
