@@ -28,7 +28,7 @@ if __name__ == '__main__':
             task_done += 1
             dones.append(todo)
 
-    print("Employee {} is done with task({}/{}):"
+    print("Employee {} is done with tasks({}/{}):"
           .format(name, task_done, len(user_todo)))
     for task in dones:
         print("\t {}".format(task.get('title')))
