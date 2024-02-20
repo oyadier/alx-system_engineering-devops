@@ -1,5 +1,6 @@
 #!/usr/bash/python3
-'''calling content of ID'''
+# -*- code: utf-8 -*-
+"""calling content of ID"""
 
 from requests import get
 import sys
