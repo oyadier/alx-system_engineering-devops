@@ -1,30 +1,18 @@
-#!/usr/bin/python3
-"""
-    Post count
-"""
-from json import loads
-from requests import get
-
-
 def number_of_subscribers(subreddit):
-    """ 
-        If no results are found for the given subreddit, the function
-        should return None
-    """
-    url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
-    headers = {
-        'User-Agent':
-        'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.3) \
-        Gecko/20100401 Firefox/3.6.3 (FM Scene 4.6.1)'
-    }
-    response = get(url, headers=headers)
-    reddits = response.json()
+    '''
+        Args:
+            subreddit (string): the api endpoint
+            Returns (Int): the total number of subreddit
+    '''
+    from requests import get
+    headers = {'user-agent': 'advance-api/1.0.0'}
+    sub_url = f"https://www.reddit.com/r/{subreddit}/about.json"
 
-    try:
-        subscribers = reddits.get('data').get('subscribers')
-        return int(subscribers)
-    except:
+    subscribe = get(sub_url, headers=headers, allow_redirects=False)
+    if subscribe.status_code == 200:
+        count = subscribe.json()
+        return count['data']['subscribers']
+    elif subscribe.status_code == 404:
         return 0
-        
-        #!/usr/bin/python3
-'''Function to Get subscriber from Reddit'''
+    else:
+        return 0
