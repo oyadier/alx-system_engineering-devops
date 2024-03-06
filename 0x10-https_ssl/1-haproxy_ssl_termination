@@ -39,7 +39,7 @@ defaults
 frontend www-http
    bind *:80
 
-   bind *:443 ssl crt /etc/ssl/www.gregoryjames.website/www.gregoryjames.website.pem
+   bind *:443 ssl crt 
 
    acl letsencrypt-acl path_beg /.well-known/acme-challenge/
    use_backend letsencrypt-backend if letsencrypt-acl

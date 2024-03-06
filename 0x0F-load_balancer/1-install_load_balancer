@@ -8,8 +8,7 @@ sudo echo  "ENABLE=1" >> /etc/default/haproxy
 
 # Configure haproxy config file
 
-echo "
-frontend http
+echo "frontend http
 	bind *:80
 	default_backend myservers
 

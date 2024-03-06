@@ -4,8 +4,8 @@
 # Install nginx on web-01 server
 #sudo apt-get -y update
 #sudo apt-get -y install nginx
-web_1="ssh ubuntu@54.210.53.70" sudo ~/.ssh/id_rsa
-web_2="ssh ubuntu@34.224.17.191" ~/.ssh/id_rsa
+web_1="sudo ssh ubuntu@54.210.53.70"
+web_2="sudo ssh ubuntu@34.224.17.191"
 #sudo apt-get -y update
 #sudo apt-get -y install nginx
 
