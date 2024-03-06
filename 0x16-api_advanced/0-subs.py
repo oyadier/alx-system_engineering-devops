@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-'''Function to Get subscriber from Reddit'''
+"""
+ lalkdl
+"""
 
 
 def number_of_subscribers(subreddit):
