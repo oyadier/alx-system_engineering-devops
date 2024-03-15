@@ -14,8 +14,8 @@ server {
 
 	# Proxy to the process listening at port 5001
 	# serving different route
-	location /number_odd_or_even/ {
-		proxy_pass http://12.0.0.1:5001/;
+	location ~ /airbnb-dynamic/number_odd_or_even/(\d+)$ {
+		proxy_pass http://12.0.0.1:5001/number_odd_or_even/$1;
 	}
 
         # Proxy request to the process listening at post 5000
