@@ -1,6 +1,6 @@
 exec { 'increase-fd':
-  path => '/bin/'
-  command => 'sed -i "s/15/1400" /etc/default/nginx',
+  path => '/bin/',
+  command => 'sed -i "s/15/1500" /etc/default/nginx',
 }
 exec { 'restart':
   path => '/bin/',
